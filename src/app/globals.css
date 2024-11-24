@@ -2,20 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
+  background: white;
   font-family: Arial, Helvetica, sans-serif;
 }
+.world-image {
+  background-image: url("/icons/world.svg");
+  animation: move-background 20s alternate-reverse infinite;
+}
+/* 
+@keyframes move-background {
+  from {
+    background-position: 0% 0;
+  }
+  to {
+    background-position: -100% 0;
+  }
+} */
